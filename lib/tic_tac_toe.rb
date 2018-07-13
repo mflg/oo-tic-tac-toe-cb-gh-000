@@ -99,15 +99,15 @@ class TicTacToe
 
   # Define your play method below
 
-  def play(board)
-    while !over?(board)
-  	turn(board)
+  def play
+    while !over?
+  	   turn
     end
-    if won?(board)
-  	puts winner(board)
-  	puts "Congratulations "+ winner(board) +"!"
+    if won?
+  	   puts winner
+  	   puts "Congratulations "+ winner +"!"
     else
-  	puts "Cat's Game!"
+  	   puts "Cat's Game!"
     end
   end
 
