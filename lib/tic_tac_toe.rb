@@ -1,5 +1,6 @@
 class TicTacToe
 
+  #constants 
   WIN_COMBINATIONS = [
     [0,1,2], # Top row
     [3,4,5], # Middle row
@@ -11,7 +12,7 @@ class TicTacToe
     [2,5,8]  # Column 3
   ]
 
- # methods 
+ # methods
 
   def initialize
     @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
