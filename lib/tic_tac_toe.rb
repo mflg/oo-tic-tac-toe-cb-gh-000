@@ -1,6 +1,7 @@
 class TicTacToe
 
-  #constants 
+  #constants
+
   WIN_COMBINATIONS = [
     [0,1,2], # Top row
     [3,4,5], # Middle row
@@ -17,6 +18,16 @@ class TicTacToe
   def initialize
     @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
+
+  def display_board(board)
+    puts " #{board[0]} | #{board[1]} | #{board[2]} "
+    puts "-----------"
+    puts " #{board[3]} | #{board[4]} | #{board[5]} "
+    puts "-----------"
+    puts " #{board[6]} | #{board[7]} | #{board[8]} "
+  end
+
+
   def won?(board)
     WIN_COMBINATIONS.detect do |arr_comb|
   	board[arr_comb[0]]!=" " && board[arr_comb[0]]==board[arr_comb[1]] && board[arr_comb[0]]==board[arr_comb[2]]
