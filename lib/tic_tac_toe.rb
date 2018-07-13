@@ -57,7 +57,7 @@ class TicTacToe
   end
 
 
-  def won?(board)
+  def won?
     WIN_COMBINATIONS.detect do |arr_comb|
   	board[arr_comb[0]]!=" " && board[arr_comb[0]]==board[arr_comb[1]] && board[arr_comb[0]]==board[arr_comb[2]]
     end
