@@ -59,13 +59,13 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.detect do |arr_comb|
-  	board[arr_comb[0]]!=" " && board[arr_comb[0]]==board[arr_comb[1]] && board[arr_comb[0]]==board[arr_comb[2]]
+  	   @board[arr_comb[0]]!=" " && @board[arr_comb[0]]==@board[arr_comb[1]] && @board[arr_comb[0]]==@board[arr_comb[2]]
     end
   end
 
-  def full?(board)
-    board.none? do |element|
-  	element == " "
+  def full?
+    @board.none? do |element|
+  	   element == " "
     end
   end
 
